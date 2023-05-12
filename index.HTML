@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <title>Nav Bar</title>
+    <title>Med-Shop </title>
+    <style type=text/css></style>
 </head>
 <body>
-    <h1>Our store</h1>
+    <h1>Med-Shop </h1>
     <nav>
-   <label class="logo">Welcome</label>
+   <label class="logo">Welcome Clients</label>
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Contact Us</a></li>
     </ul>
     </nav>
-    
+    <input onkeyup="search()" id="pute" type="text" placeholder="Search..">
+
   
-    <div class="card_container"></div>
+    <div  class="card_container"></div>
 
     </div>
     </div>
@@ -30,18 +32,21 @@
     <div class="container">
         <!-- <div id="root"></div> -->
         <div class="sidebar">
-            <div class="head"><p>My Cart</p></div>
-            <div id="cartItem">Your cart is empty</div>
-            <div class="foot">
+            <div class="head"><p>Your Bilet</p></div>
+            <div id="cartItem"></div>
+            <div class="listoftotal">
                 <h3>Total</h3>
-                <h2 id="total">$ 0.00</h2>
+                <p id="total1"></p>
+                <h2 id="total"></h2>
+                <p class="tot"></p>
+                <button id="b1" >CLICK TO CHECK YOUR TOTAL</button>
             </div>
         </div>
     </div>
     <div class="slidebar">
      <div class="head">
-        <p>THIS IS YOUR CHECK</p>
-        <ul id="ul1">
+        <p id="p1">SEE YOU NEXT TIME CUSTOMER</p>
+        
             
         </ul>
      </div>
