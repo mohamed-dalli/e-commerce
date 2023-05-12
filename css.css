@@ -4,18 +4,24 @@
     text-decoration:none;
     list-style: none;
     box-sizing: border-box;
+    
 
+    
 }
 body{
     font-family: montserrat;
-    
+    background-image: url("./images-removebg-preview\ \(1\).png"); ;
+    background-repeat: no-repeat;
+    background-color: #c1a592;
+
 }
 
 h1{
-    color: red;
-    margin-left: 8cm;
+    color: #ffcaa6;
+    margin-left: 30%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 150px;
+    font-weight: solid;
 }
 
 nav{
@@ -26,7 +32,7 @@ nav{
 }
 
 label.logo{
-    color:white;
+    color:rgb(26, 26, 162);
     font-size: 35px;
     line-height: 80px;
     padding:0 20px;
@@ -37,6 +43,11 @@ nav ul{
     margin-right:20px ;
 
 }
+.imgs{
+    margin-left: 13px;
+    
+        width: 169px;
+}
 
 nav ul li{
     display: inline-block;
@@ -44,26 +55,23 @@ nav ul li{
     margin: 0 5px;
 }
 
-nav ul li a{
-    color:white;
-    font-size: 17px;
-    text-transform: uppercase;
-}
-
 a.active,a:hover{
-    background: #1b9bff;
+    background: rgb(255, 255, 255);
     transition: .5s;
 
 }
 .card {
-    width: 190px;
-    height: 254px;
-    padding: .8em;
+    width: 232px;
+    height: 308px;
+    padding: 0.8em;
     background: #f5f5f5;
     position: relative;
     overflow: visible;
+    border-radius: 15%;
+    border: solid black;
+    background-color: transparent;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    
+   
    }
    
    
@@ -73,7 +81,7 @@ a.active,a:hover{
    }
    
    svg {
-    width: 20px;
+    width: 40px;
     height: 20px;
    }
    
@@ -98,7 +106,6 @@ a.active,a:hover{
     padding-bottom: 10px;
    }
    
-   /*Button*/
    .card-button {
     border: 1px solid #252525;
     display: flex;
@@ -107,31 +114,25 @@ a.active,a:hover{
     border-radius: 50px;
     transition: .3s ease-in-out;
    }
-   
-   /*Hover*/
-   .card-img:hover {
-    transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-    
-   }
-   
+
    .card-button:hover {
     border: 1px solid #ffcaa6;
     background-color: #ffcaa6;
    }
 .card_container{
-    display:flex;
+    display:grid;
     gap:30px;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    grid-template-columns: auto auto auto auto;
 }
 
 .slidebar{
     width: 70%;
     border-radius: 50px;
     background-color: #eee;
-    margin-left: 90px;
+    margin-left: 300px;
     margin-right: 10px;
     padding: 50px;
     text-align: center;
@@ -148,16 +149,11 @@ p{
     font-family: 'poppins', sans-serif;
     font-size: 18px;
 }
-body{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-}
+
 .header{
     height: 80px;
     width: 70%;
-    background-color: goldenrod;
+    background-color: #ffcaa6;
     border-radius: 3px;
     margin: 30px 0px;
     display: flex;
@@ -165,33 +161,8 @@ body{
     justify-content: space-between;
     padding: 15px;
 }
-.header .logo{
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-}
-.cart{
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 10px;
-    border-radius: 3px;
-    width: 80px;
-}
-.fa-solid{
-    color: goldenrod;
-}
-.cart p{
-    height: 22px;
-    width: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 22px;
-    background-color: goldenrod;
-    color: white;
-}
+
+
 .container{
     display: flex;
     align-items: center;
@@ -200,22 +171,19 @@ body{
     margin-bottom: 30px;
     transform: translate(20%, 0);
 }
-#root{
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
+
 .sidebar{
-    width: 40%;
-    border-radius: 5px;
+    width: 26%;
+    border-radius: 27px;
     background-color: #eee;
-    margin-left: 20px;
+    margin-left: 50px;
     padding: 15px;
     text-align: center;
+    margin-left: -1445px;
+    margin-top: -1665px;
 }
 .head{
-    background-color: goldenrod;
+    background-color: #ffcaa6;
     border-radius: 3px;
     height: 40px;
     padding: 10px;
@@ -224,21 +192,12 @@ body{
     display: flex;
     align-items: center;
 }
-.foot{
+.listoftotal{
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
     padding: 10px 0px;
     border-top: 1px solid #333;
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid goldenrod;
-    border-radius: 5px;
-    padding: 15px;
 }
 .img-box{
     width: 100%;
@@ -247,39 +206,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.images{
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: cover;
-    object-position: center;
-}
-.bottom{
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 110px;
-}
-h2{
-    font-size: 20px;
-    color: red;
-}
-button{
-    width: 100%;
-    position: relative;
-    border: none;
-    border-radius: 5px;
-    background-color: goldenrod;
-    padding: 7px 25px;
-    cursor: pointer;
-    color: white;
-}
-button:hover{
-    background-color: #333;
-}
+
 .cart-item{
     display: flex;
     align-items: center;
@@ -290,24 +217,84 @@ button:hover{
     border-radius: 3px;
     margin: 10px 10px;
 }
-.row-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid goldenrod;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.rowimg{
-    max-width: 43px;
-    max-height: 43px;
-    border-radius: 50%;
-}
-.fa-trash:hover{
-    cursor: pointer;
-    color: #333;
-}
+
 .all_container{
     display: flex;
 }
+#b1{
+    height: 40px;
+    width: 150px;
+    color: #1c1917;
+    margin-left: 30%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: solid;
+}
+
+button:hover{
+    background-color: rgba(47, 46, 40, 0.358) ;
+}
+/* img:hover {
+    opacity: 0.8;
+    transition:opacity 0.3 ease-in-out;
+} */
+#p1{
+    margin-left: 40%;
+    padding-left: 0px;
+}
+#pute{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    /* margin: 20px; */
+    color: #568fa6;
+    text-align: center;
+    /* position: relative; */
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: center;
+    margin-left: 800px;
+    margin-top: 0.25%;
+    padding-top: 0.5%;
+}
+.imgs:hover {
+    max-width: max-content;
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   #imgs:hover {
+    border: 1px solid #FFCAA6;
+    background-color: #FFCAA6;
+   }
+   .btn1{
+    margin: 12px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    font-family: 'Damion', cursive;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+    position: relative;
+    left:2%
+  }
+  
+  .btn1:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
