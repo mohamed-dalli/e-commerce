@@ -83,7 +83,7 @@ function each(coll, func) {
       
           </div>
           <div class="card-info">
-              <img id="imgs" src=${element.src} width="105px">
+              <img class="imgs" src=${element.src} width="105px">
             <p class="text-title">${element.title} </p>
             <p class="text-body"zee&éeé"r"'tr"'(t'(</p>
           </div>
@@ -132,7 +132,13 @@ $('.card-button').on('click',function(){
     
     $("#cartItem").append(list);
 })
-
+$('.btn1').on('click',function(){
+  console.log($(".btn1").text());
+  $(".card_container").toggle()
+  if($(".btn1").text()==="hide"){
+  $(".btn1").text("show")}else{$(".btn1").text("hide")}
+  
+})
 
 //////// we creat this function to search for the product by the title 
 function search(){
