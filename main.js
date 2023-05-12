@@ -83,7 +83,7 @@ function each(coll, func) {
       
           </div>
           <div class="card-info">
-              <img src=${element.src} width="105px">
+              <img id="imgs" src=${element.src} width="105px">
             <p class="text-title">${element.title} </p>
             <p class="text-body"zee&éeé"r"'tr"'(t'(</p>
           </div>

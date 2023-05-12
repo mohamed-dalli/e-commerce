@@ -63,7 +63,7 @@ a.active,a:hover{
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    
+   
    }
    
    
@@ -112,11 +112,12 @@ a.active,a:hover{
     background-color: #ffcaa6;
    }
 .card_container{
-    display:flex;
+    display:grid;
     gap:30px;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    grid-template-columns: auto auto auto;
 }
 
 .slidebar{
@@ -223,10 +224,10 @@ p{
 button:hover{
     background-color: rgba(47, 46, 40, 0.358) ;
 }
-img:hover {
+/* img:hover {
     opacity: 0.8;
     transition:opacity 0.3 ease-in-out;
-}
+} */
 #p1{
     margin-left: 40%;
     padding-left: 0px;
@@ -236,3 +237,12 @@ img:hover {
     margin-top: 0.25%;
     padding-top: 0.5%;
 }
+#imgs:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   #imgs:hover {
+    border: 1px solid #FFCAA6;
+    background-color: #FFCAA6;
+   }
+  
